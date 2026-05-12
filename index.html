@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="author" content="Muhammad Irfan Pangwangun">
+    <title>Quiz App</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Main Menu -->
+    <div id="particles-js"></div>
+    <div class="main_menu" style="display: flex">
+        <div class="big_title">
+            <p>Cyber Security Simple Quiz</p>
+        </div>
+        <div class="start_btn">
+            <button>Start</button>
+        </div>
+        <div class="credits_btn">
+            <button>credits</button>
+        </diV>
+    </div>
+    <!--credits Menu -->
+    <div class="credits_box">
+        <div class="credits-title"><span>credits</span></div>
+        <div class="credits"><span>Developed by:</span>
+        </div>
+        <div class="Img">
+            <img src="assets/img/logo.png">
+        </div>
+        <div class="buttons">
+            <button class="menu">Back</button>
+        </div>
+    </div>
+    <!--Information Menu-->
+    <div class="info_box">
+        <div class="info-title"><span>Quiz Rule</span></div>
+        <div class="info-list">
+            <div class="info">1. You can only select <span>one answer</span> per question.</div>
+            <div class="info">2. You need to answer a total of <span>20 questions.</span></div>
+            <div class="info">3. You will receive <span>5 points</span> for each correct answer.</div>
+        </div>
+        <div class="buttons">
+            <button class="menu">Back</button>
+            <button class="continue">Continue</button>
+        </div>
+    </div>
+    <!--Quiz Menu-->
+    <div class="quiz_box">
+        <header>
+            <div class="total_que">
+                <!--Show Question Numbers-->
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            
+            <div class="qImg">
+                <!--Show Question Illustrations-->
+            </div>
+            <div class="que_text">
+                <div class="question">
+                    <!--Show Questions-->
+                </div>
+                <div class="response">
+                     <!--Show Response of Answer-->
+                 </div>
+            </div>
+            <div class="option_list">
+                <!--Show Answer Option-->
+            </div>
+        </section>
+        <footer>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="complete_text">Congratulations! You have completed the quiz.</div>
+        <div class="score_text">
+            <!--Show Quiz Score-->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay</button>
+            <button class="quit">Quit</button>
+        </div>
+    </div>
+
+<!-- Audio elements for sound effects -->
+    <audio id="click">
+    <source src="assets/sound/click.ogg">
+    </audio>
+    <audio id="correct">
+    <source src="assets/sound/correct.mp3">
+    </audio>
+    <audio id="incorrect">
+    <source src="assets/sound/incorrect.mp3">
+    </audio>
+    <audio id="win">
+    <source src="assets/sound/win.ogg">
+    </audio>
+    <audio id="lose">
+    <source src="assets/sound/lose.ogg">
+    </audio>
+    <audio id="bgm" autoplay loop>
+        <source src="assets/sound/bgm.ogg">
+    </audio>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/confetti.js-master/confetti.js"></script>
+    <script src="assets/particles.js/particles.min.js"></script>
+    <script>
+        var audioElement = document.getElementById('bgm');
+        audioElement.volume = 0.3; // volume tetap di 50%
+        audioElement.addEventListener('volumechange', function() {
+            if (audioElement.volume !== 0.3) {
+                audioElement.volume = 0.3;
+            }
+        });
+    </script>
+    <script>
+        particlesJS('particles-js', {
+            "particles": {
+                "number": {
+                    "value": 50,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#cccccc"
+                },
+                "shape": {
+                    "type": "circle",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#000000"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#ffffff",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+
+</html>
