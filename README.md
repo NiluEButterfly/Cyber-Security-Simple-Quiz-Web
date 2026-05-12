@@ -29,14 +29,15 @@ You can try the quiz here: [Insert your GitHub Pages link here]
    - [FontAwesome](https://fontawesome.com/) - Iconography.
 
 ## Project Structure
+```text
 ├── assets/
-|   ├── confetti.js-master  # Confetti library
-│   ├── css/                # Custom styles (style.css)
-│   ├── js/                 # Logic (script.js, questions.js)
-│   ├── img/                # SVG Illustrations and logo
-│   ├── sound/              # BGM and SFX (mp3/ogg)
-│   └── particles.js/       # Particle library
-├── index.html              # Main entry point
+│   ├── confetti.js-master    # Confetti library
+│   ├── css/                  # Custom styles (style.css)
+│   ├── js/                   # Logic (script.js, questions.js)
+│   ├── img/                  # SVG Illustrations and logo
+│   ├── sound/                # BGM and SFX (mp3/ogg)
+│   └── particles.js/         # Particle library
+├── index.html                # Main entry point
 └── README.md
-
+```
 ## **Developed by NiluEB Development**
