@@ -3,7 +3,7 @@ An interactive, dark-mode cybersecurity simple quiz web focused on digital safet
 
 <img src="image.png" alt="Deskripsi" width="720">
 
-## 🚀 Live Demo
+## Live Demo
 You can try the quiz here: https://niluebutterfly.github.io/Cyber-Security-Simple-Quiz-Web/
 
 ## Features
@@ -21,7 +21,7 @@ You can try the quiz here: https://niluebutterfly.github.io/Cyber-Security-Simpl
 - You will receive **5 points** for each correct answer.
 - Bonus: Try to get a score above 80 to see the special celebration!
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Libraries:**
    - [Particles.js](https://vincentgarreau.com/particles.js/) - Interactive background particles.
