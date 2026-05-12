@@ -4,7 +4,7 @@ An interactive, dark-mode cybersecurity simple quiz web focused on digital safet
 <img src="image.png" alt="Deskripsi" width="720">
 
 ## 🚀 Live Demo
-You can try the quiz here: [Insert your GitHub Pages link here]
+You can try the quiz here: https://niluebutterfly.github.io/Cyber-Security-Simple-Quiz-Web/
 
 ## Features
 - **Dynamic UI:** An animated particle background using `particles.js`.
