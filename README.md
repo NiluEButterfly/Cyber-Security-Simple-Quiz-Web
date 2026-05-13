@@ -1,5 +1,5 @@
 # Cyber Security Simple Quiz
-An interactive, dark-mode cybersecurity simple quiz web focused on digital safety education.
+An interactive, dark-mode Vanilla JS simple quiz web focused on digital safety education.
 
 <img src="image.png" alt="Deskripsi" width="720">
 
